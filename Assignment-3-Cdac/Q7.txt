@@ -1,0 +1,29 @@
+public class UninitializedWhileLoop { 
+    public static void main(String[] args) { 
+        int count; 
+ 
+ 
+        while (count < 10) { 
+            System.out.println(count); 
+            count++; 
+        } 
+    } 
+} ______________________________________________________________
+
+Error:-
+---------> The 'count' variable value should be declared in order to use it. 
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class UninitializedWhileLoop { 
+    public static void main(String[] args) { 
+        int count = 0; 
+ 
+ 
+        while (count < 10) { 
+            System.out.println(count); 
+            count++; 
+        } 
+    } 
+} 

@@ -1,0 +1,22 @@
+public class InfiniteForLoop { 
+    public static void main(String[] args) { 
+        for (int i = 0; i < 10; i--) { 
+            System.out.println(i); 
+        } 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> The loop declaration is wrong. It is decrementing but it should be incrementing in order to work correctly. 
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class InfiniteForLoop { 
+    public static void main(String[] args) { 
+        for (int i = 0; i < 10; i++) { 
+            System.out.println(i); 
+        } 
+    } 
+} 

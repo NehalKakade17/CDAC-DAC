@@ -1,0 +1,25 @@
+    public static void main(String[] args) { 
+        static void displayMessage() { 
+            System.out.println("Message"); 
+        } 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> The 'display' method should be declared outside main method and for execution should be called within main nmethod.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main {
+    
+    public static void displayMessage() {
+        System.out.println("Message");
+    }
+
+    public static void main(String[] args) {
+        
+        displayMessage();
+    }
+}

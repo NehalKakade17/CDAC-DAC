@@ -1,0 +1,18 @@
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World") 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> The print statement must end with a semicolon.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World"); // Added the missing semicolon
+    } 
+}

@@ -1,0 +1,20 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int x = "Hello"; 
+        System.out.println(x); 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> 'int' cannot store array of characters. Hence use 'String' datatype for array of characters.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main {
+    public static void main(String[] args) {
+        String x = "Hello";
+        System.out.println(x); 
+    }
+}

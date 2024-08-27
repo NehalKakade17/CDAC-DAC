@@ -1,0 +1,25 @@
+public class Main { 
+    public static void main(String[] args) { 
+        String str = null; 
+        System.out.println(str.length()); 
+    } 
+}
+______________________________________________________________
+
+Error:-
+---------> The String is null and hence does not have any length value. Length does not work for null variables.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main { 
+    public static void main(String[] args) { 
+        String str = null;
+
+        if (str != null) {
+            System.out.println(str.length());
+        } else {
+            System.out.println("String is null.");
+        }
+    } 
+}

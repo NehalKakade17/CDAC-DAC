@@ -1,0 +1,24 @@
+public class Main { 
+    public static void main(String[] args) { 
+        while (true) { 
+            System.out.println("Infinite Loop"); 
+        } 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> The loop will keep executing infinitely as there is no stopping condition.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main { 
+    public static void main(String[] args) { 
+        int count = 0;
+        while (count < 5) { 
+            System.out.println("Loop iteration " + count);
+            count++;
+        } 
+    } 
+}

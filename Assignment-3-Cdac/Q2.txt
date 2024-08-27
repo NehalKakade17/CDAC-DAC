@@ -1,0 +1,26 @@
+public class IncorrectWhileCondition { 
+    public static void main(String[] args) { 
+        int count = 5; 
+        while (count = 0) { 
+            System.out.println(count); 
+            count--; 
+        } 
+    } 
+}  
+______________________________________________________________
+
+Error:-
+---------> The loop declaration is wrong. 'count' should be specified properly inside the loop. 
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class IncorrectWhileCondition { 
+    public static void main(String[] args) { 
+        int count = 5; 
+        while (count > 0) { 
+            System.out.println(count); 
+            count--; 
+        } 
+    } 
+} 
