@@ -1,0 +1,23 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int num = 10; 
+        double result = num / 4; 
+        System.out.println(result); 
+    } 
+} 
+
+______________________________________________________________
+
+Error:-
+---------> The datatype for output variable should be same as input.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main { 
+    public static void main(String[] args) { 
+        int num = 10; 
+        double result = (double) num / 4; 
+        System.out.println(result); // This will print 2.5
+    } 
+}

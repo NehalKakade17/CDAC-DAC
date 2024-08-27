@@ -1,0 +1,23 @@
+public class MisplacedForLoopBody { 
+    public static void main(String[] args) { 
+        for (int i = 0; i < 5; i++) 
+            System.out.println(i); 
+            System.out.println("Done"); 
+    } 
+}  
+______________________________________________________________
+
+Error:-
+---------> The loop declaration is wrong. Parenthesis is missing. 
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class MisplacedForLoopBody { 
+    public static void main(String[] args) { 
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i); 
+	}
+            System.out.println("Done"); 
+    } 
+} 

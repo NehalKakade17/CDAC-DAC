@@ -1,0 +1,24 @@
+ public class InfiniteForLoopUpdate { 
+    public static void main(String[] args) { 
+        for (int i = 0; i < 5; i += 2) { 
+            System.out.println(i); 
+        } 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> The loop will close at condition less than 5. To have it run properly one need to use 'increment by 2' condition inside loop.  
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class InfiniteForLoopUpdate { 
+    public static void main(String[] args) { 
+        for (int i = 0; i < 5; ) { 
+            System.out.println(i); 
+            i += 2;
+        } 
+    } 
+} 
+ 

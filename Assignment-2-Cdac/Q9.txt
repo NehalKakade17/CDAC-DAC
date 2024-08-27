@@ -1,0 +1,20 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int class = 10; 
+        System.out.println(class); 
+    } 
+} 
+______________________________________________________________
+
+Error:-
+---------> The 'class' is pre defined keyword in java. Hence it cannot be used as a variable.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main {
+    public static void main(String[] args) {
+        int number = 10;
+        System.out.println(number); 
+    }
+}

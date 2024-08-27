@@ -1,0 +1,18 @@
+public class Main { 
+    public static void main() { 
+        System.out.println("Hello, World!"); 
+    } 
+}
+______________________________________________________________
+
+Error:-
+---------> The declaration of main method is wrong. 'String[] args' is used for command line arguments.
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}

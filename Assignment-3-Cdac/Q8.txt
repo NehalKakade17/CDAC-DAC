@@ -1,0 +1,26 @@
+public class OffByOneDoWhileLoop { 
+    public static void main(String[] args) { 
+        int num = 1; 
+        do { 
+            System.out.println(num); 
+            num--; 
+        } while (num > 0); 
+    } 
+}  
+______________________________________________________________
+
+Error:-
+---------> The 'num' value is not properly defined. There is no integer in between 0 and 1. 
+______________________________________________________________
+
+Corrected Code Snippet:-
+
+public class OffByOneDoWhileLoop { 
+    public static void main(String[] args) { 
+        int num = 5; 
+        do { 
+            System.out.println(num); 
+            num--; 
+        } while (num > 0); 
+    } 
+} 
