@@ -1,0 +1,20 @@
+class Palindrome {
+    public static boolean show(int v){
+        String s = String.valueOf(v);
+        StringBuilder inp1 = new StringBuilder();
+        inp1.append(s);
+        inp1.reverse();
+        String res = inp1.toString();
+        if(res.equals(s)){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    public static void main(String[] args) {
+        int val = 121;
+        System.out.println(show(val));
+    }
+}
