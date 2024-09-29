@@ -1,0 +1,23 @@
+class LeapYear{
+    public static boolean show(int v){
+        if(v%4==0){
+            if(v%100==0){
+                if(v%400==0)
+                    return true;
+                else
+                    return false;
+                
+            }
+            else
+                return true;
+        }
+        else
+            return false;
+        
+        
+        
+    }
+    public static void main(String[] args) {
+        System.out.println(show(1900));
+    }
+}
