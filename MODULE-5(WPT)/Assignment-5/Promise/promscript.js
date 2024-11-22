@@ -19,7 +19,7 @@ document.getElementById('fetchDataBtn').addEventListener('click', async () => {
         // Display the results
         document.getElementById('result').textContent = results
             .map(post => `Title: ${post.title}\nBody: ${post.body}`)
-            .join('\n\n'); // Add some space between posts
+            .join('\n'); // Add some space between posts
     } catch (error) {
         // Handle any error that occurred during the fetch calls
         document.getElementById('result').textContent = error.message;
